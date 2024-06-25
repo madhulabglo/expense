@@ -1,0 +1,126 @@
+/* Apply background color to the entire page */
+.login-container {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: fixed;
+  margin-left: 30%;
+}
+
+/* Style the card */
+.login-card {
+  background-color: #fff; /* White background for the card */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px; /* Padding inside the card */
+  max-width: 400px; /* Maximum width for the card */
+  width: 100%; /* Full width up to the maximum width */
+  box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+  text-align: center; /* Center the text */
+  height: 80vh;
+  position: fixed;
+}
+
+.login-card h4 {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: bold; /* Remove default margin on top of the heading */
+}
+
+.login-card label {
+  display: block; /* Make the label a block element */
+  padding-top: 30px;
+  text-align: left;
+  padding-left: 10px; /* Add some space below the label */
+}
+
+.login-card span {
+  color: red;
+}
+
+.login-card input {
+  margin-bottom: 10px; /* Add space below the input */
+  padding: 8px; /* Add some padding inside the input */
+  width: calc(100% - 16px); /* Ensure the input fits within the card with padding considered */
+  box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.login-card button {
+  padding: 10px 20px; /* Add padding inside the button */
+  border: none; /* Remove default border */
+  background-color: #007bff; /* Blue background color */
+  color: #fff; /* White text color */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 4px; /* Slightly rounded corners */
+}
+
+.login-card button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Media query for devices with a max-width of 768px */
+@media (max-width: 768px) {
+  .login-container {
+    margin-left: 0;
+    margin-bottom: 0;
+    height: auto;
+    position: static;
+    padding: 20px; /* Add some padding to the container */
+    margin-top: 10%;
+  }
+
+  .login-card {
+    max-width: 100%; /* Full width for the card */
+    height: auto;
+    position: static;
+    padding: 15px; /* Reduce padding inside the card */
+  }
+
+  .login-card h4 {
+    font-size: 18px; /* Slightly smaller font size */
+  }
+
+  .login-card label {
+    padding-top: 20px; /* Reduce padding */
+    padding-left: 5px; /* Reduce padding */
+  }
+
+  .login-card input {
+    padding: 6px; /* Reduce padding */
+  }
+
+  .login-card button {
+    padding: 8px 16px; /* Reduce padding */
+  }
+}
+
+/* Media query for devices with a max-width of 480px */
+@media (max-width: 480px) {
+  .login-container{
+    margin-top: 10%;
+  }
+  
+  .login-card {
+    padding: 10px; /* Further reduce padding */
+  }
+
+  .login-card h4 {
+    font-size: 16px; /* Smaller font size */
+  }
+
+  .login-card label {
+    padding-top: 15px; /* Further reduce padding */
+    padding-left: 2px; /* Further reduce padding */
+  }
+
+  .login-card input {
+    padding: 5px; /* Further reduce padding */
+  }
+
+  .login-card button {
+    padding: 6px 12px; /* Further reduce padding */
+    font-size: 14px; /* Adjust font size */
+  }
+}

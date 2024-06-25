@@ -1,0 +1,111 @@
+.home-history-card {
+  position: fixed;
+  top: 13%; /* Adjusted to push the card down from the top */
+  right: 2%; /* Adjusted to push the card left from the right edge */
+  height: 85%;
+  background-color: white;
+  width: 23%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  /* overflow-y: auto; Added for scrollability if content exceeds height */
+}
+
+.home-history-card-body {
+  display: flex;
+  flex-direction: column;
+}
+.home-history-card-title{
+  display: flex;
+}
+
+.home-history-card-title-content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.home-history-card-title-content i {
+  margin-right: 10px;
+}
+
+.home-history-card-title-content h6 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.transaction-entry {
+  width: 100%; 
+  /* margin-bottom: 15px; */
+  text-align: left; /* Align text to the left */
+}
+
+hr {
+  margin: 10px 0;
+  border: none;
+  border-top: 1px solid #b6b2b2;
+}
+
+.home-history-card-description {
+  font-weight: bold;
+}
+
+.home-history-card-date {
+  font-size: 12px;
+}
+
+.home-history-card-amount {
+  text-align: right;
+  display: block;
+  font-weight: bold;
+  margin-top: -40px; /* Adjusted for better spacing */
+  /* color: yellow; */
+} 
+
+/* .view-button {
+  display: flex;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+   padding: 5px 10px;
+  margin-top: 10px;
+  background-color: #007bff; 
+  color: white;
+  text-align: center; 
+  transition: background-color 0.3s, color 0.3s;
+  margin-left: 27%;
+} */
+ .view-button {
+  padding: 10px 20px; /* Add padding inside the button */
+  border: none; /* Remove default border */
+  background-color: #007bff; /* Blue background color */
+  color: #fff; /* White text color */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 4px; /* Slightly rounded corners */
+  margin-left: 18%;
+ }
+
+.view-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.home-history-card-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px; /* Added space above footer */
+}
+
+.add-button {
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.add-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}

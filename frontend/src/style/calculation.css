@@ -1,0 +1,117 @@
+.calculation-card {
+    margin-top: 10%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    height: auto;
+    max-height: 80vh; /* Limit the maximum height of the card */
+    box-sizing: border-box;
+    text-align: center;
+    position: fixed;
+    left: 55%;
+    transform: translateX(-50%);
+    overflow-y: auto; /* Enable vertical scrolling */
+    margin-bottom: 20px;
+  }
+  
+  .calculation-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .date-filter {
+    display: flex;
+    gap: 20px; /* Space between fromdate and todate inputs */
+  }
+  
+  .date-input {
+    width: 150px; /* Medium size for date inputs */
+    padding: 5px 10px; /* Add padding to match dropdown */
+    border: 1px solid #ced4da; /* Match border style of dropdown */
+    border-radius: 4px; /* Rounded corners to match dropdown */
+    font-size: 16px; /* Match font size of dropdown */
+  }
+  
+  .calculation-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .table-container {
+    width: 45%;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tr:hover {
+    background-color: #ddd;
+  }
+  
+  .summary-container {
+    width: 50%;
+    text-align: left;
+  }
+  
+  .spend-by-filter {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between label and dropdown */
+    margin-left: 15px; /* Space between date-filter and spend-by-filter */
+  }
+  
+  .spend-by-label {
+    white-space: nowrap; /* Prevent label from wrapping onto multiple lines */
+  }
+  
+  .form-select {
+    width: 200px;
+    padding: 5px 10px; /* Ensure padding matches date inputs */
+    font-size: 16px; /* Ensure font size matches date inputs */
+  }
+  
+  p {
+    margin: 5px 0;
+    border: 1px solid #ddd; /* Add border to paragraphs */
+    padding: 10px; /* Add padding inside the border */
+    border-radius: 4px; /* Optional: Add slight rounding to the corners */
+  }
+  
+  hr {
+    margin: 20px 0;
+  }
+  
+  .red-text {
+    color: red;
+  }
+  
+  .green-text {
+    color: green;
+  }
+  
+  .amount {
+    text-align: right; /* Align text to the right */
+  }
+  

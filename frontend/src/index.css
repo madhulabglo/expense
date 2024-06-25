@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Times New Roman', Times, serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #cad8d8;
+  /* height: 100vh; */
+  overflow-x: hidden;
+  padding: 0;
+  box-sizing: border-box;
+}
+.error-message{
+  color: red;
+}

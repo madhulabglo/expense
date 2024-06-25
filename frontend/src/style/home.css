@@ -1,0 +1,111 @@
+.home-container {
+  display: flex;
+  justify-content: left;
+  align-items: start;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 5%;
+  padding: 60px 10px; /* Account for the fixed navbar height */
+  max-height: calc(100vh - 56px); /* Adjust for the fixed navbar height */
+  overflow-y: hidden; /* Prevent vertical scrolling */
+  margin-left: -4%;
+}
+
+/* Base Styles */
+.home-card {
+  width: 300px; /* Adjust as needed */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px; /* Adjust margin for better spacing */
+  background-color: white;
+  cursor: pointer;
+}
+
+.home-card-body {
+  padding: 20px;
+}
+
+.home-card-title {
+  font-size: 16px;
+}
+
+.home-card-text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Media Queries */
+
+/* For devices with a max-width of 1024px */
+@media (max-width: 1024px) {
+  .home-container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15%;
+    padding: 60px 10px; /* Adjust for the navbar */
+  }
+
+  .home-card {
+    width: 80%;
+  }
+
+  .home-card-body {
+    padding: 15px;
+  }
+
+  .home-card-title {
+    font-size: 15px;
+  }
+
+  .home-card-text {
+    font-size: 17px;
+  }
+}
+
+/* For devices with a max-width of 768px */
+@media (max-width: 768px) {
+  .home-container {
+    margin-top: 20%;
+    padding: 60px 10px; /* Adjust for the navbar */
+  }
+
+  .home-card {
+    width: 90%;
+  }
+
+  .home-card-body {
+    padding: 15px;
+  }
+
+  .home-card-title {
+    font-size: 14px;
+  }
+
+  .home-card-text {
+    font-size: 16px;
+  }
+}
+
+/* For devices with a max-width of 480px */
+@media (max-width: 480px) {
+  .home-container {
+    margin-top: 30%;
+    padding: 60px 10px; /* Adjust for the navbar */
+  }
+
+  .home-card {
+    width: 100%;
+  }
+
+  .home-card-body {
+    padding: 10px;
+  }
+
+  .home-card-title {
+    font-size: 13px;
+  }
+
+  .home-card-text {
+    font-size: 15px;
+  }
+}

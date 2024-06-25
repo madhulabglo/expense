@@ -1,0 +1,58 @@
+ .chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin-top: -1rem; 
+  }
+  
+  .chart-card {
+    width: 80%;
+    max-width: 980px;
+    height: 450px;
+    max-height: 350px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-61%);
+  }
+  
+  .chart {
+    height: 200%;
+    width: 500%;
+    transform: translateX(20%);
+  }
+  
+@media (max-width: 1200px) {
+  .chart-container {
+    height: auto;
+  }
+
+  .chart-card {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: auto;
+    background-color: #ffffff; /* Set background color */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: relative; /* Remove fixed positioning */
+    transform: none; /* Remove horizontal centering */
+    z-index: 1; /* Higher z-index for better visibility */
+  }
+}
+
+@media (max-width: 768px) {
+  .chart {
+    height: 300px; /* Adjust chart height for smaller screens */
+    width: auto; /* Allow chart to fit container width */
+    transform: none; /* Remove horizontal centering */
+  }
+}
+
+
+
